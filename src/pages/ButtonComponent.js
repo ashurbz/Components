@@ -4,7 +4,11 @@ import Button from "../components/Button";
 const ButtonComponent = () => {
   return (
     <div>
-      <Button>Click Me</Button>
+      <Button primary>Click Me</Button>
+      <Button secondary>Click Me</Button>
+      <Button danger>Click Me</Button>
+      <Button warning>Click Me</Button>
+      <Button success>Click Me</Button>
     </div>
   );
 };
