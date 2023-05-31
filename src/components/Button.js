@@ -12,7 +12,7 @@ const Button = ({
   rounded,
   ...rest
 }) => {
-  const classes = classNames("px-3  py-1.5 border", rest.className, {
+  const classes = classNames(rest.className, "px-3  py-1.5 border", {
     "bg-blue-500 border-blue-500 text-white ": primary,
     "bg-gray-500 border-gray-500 text-white ": secondary,
     "bg-green-500 border-green-500 text-white ": success,

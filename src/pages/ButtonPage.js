@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 
-const ButtonComponent = () => {
+const ButtonPage = () => {
   return (
     <div>
       <Button primary>Click Me</Button>
@@ -25,4 +25,4 @@ const ButtonComponent = () => {
   );
 };
 
-export default ButtonComponent;
+export default ButtonPage;

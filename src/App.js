@@ -1,9 +1,11 @@
-import ButtonComponent from "./pages/ButtonComponent";
+import AccordianPage from "./pages/AccordianPage";
+import ButtonPage from "./pages/ButtonPage";
 
 function App() {
   return (
     <div className="App">
-      <ButtonComponent />
+      <ButtonPage />
+      <AccordianPage />
     </div>
   );
 }
