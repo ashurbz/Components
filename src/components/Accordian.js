@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Accordian = ({ items }) => {
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
     <>
@@ -13,7 +13,9 @@ const Accordian = ({ items }) => {
               <div className="flex" key={item.id}>
                 <h3
                   onClick={() => {
-                    setExpandedIndex(index);
+                    expandedIndex === index
+                      ? setExpandedIndex(null)
+                      : setExpandedIndex(index);
                   }}
                 >
                   {item.label}
