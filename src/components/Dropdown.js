@@ -14,7 +14,7 @@ const Dropdown = ({ options, selected, onSelect }) => {
     const event = document.addEventListener("click", handler, true);
 
     return () => {
-      document.removeEventListener("click", handler);
+      document.removeEventListener("click", event);
     };
   }, []);
 
