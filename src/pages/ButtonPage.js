@@ -8,7 +8,7 @@ const ButtonPage = () => {
       <Button secondary outline>
         Click Me
       </Button>
-      <Button danger rounded>
+      <Button danger outline>
         Click Me
       </Button>
       <Button warning>Click Me</Button>

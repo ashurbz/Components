@@ -21,10 +21,10 @@ const Button = ({
     "rounded-full": rounded,
     "bg-white": outline,
     "text-blue-500": outline && primary,
-    "text-gray-500": outline && secondary,
-    "text-green-500": outline && success,
+    "text-gray-900": outline && secondary,
+    "text-green-700": outline && success,
     "text-yellow-500": outline && warning,
-    "text-red-500": outline && danger,
+    "text-red-900": outline && danger,
   });
   return (
     <div>
