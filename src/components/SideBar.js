@@ -15,6 +15,10 @@ const SideBar = () => {
       label: "DropDown",
       path: "/dropdown",
     },
+    {
+      label: "Modal",
+      path: "/modal",
+    },
   ];
   return (
     <div>
