@@ -1,16 +1,16 @@
+import SideBar from "./components/SideBar";
 import AccordianPage from "./pages/AccordianPage";
 import ButtonPage from "./pages/ButtonPage";
 import DropDownPage from "./pages/DropdownPage";
-import Link from "./Link";
+
 import Route from "./Route";
 
 function App() {
   return (
-    <div className="App">
-      <Link to="/accordian">Accordian</Link>
-      <Link to="/button">Button</Link>
-      <Link to="/dropdown">DropDown</Link>
-
+    <div className="flex justify-evenly p-5 m-5">
+      <div>
+        <SideBar />
+      </div>
       <Route path="/accordian">
         <AccordianPage />
       </Route>
