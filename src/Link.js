@@ -1,11 +1,13 @@
 import React from "react";
-import { useContext } from "react";
-import NavigationContext from "./context/NavigationContext";
+import useNavigationHook from "./hooks/useNavigationHook";
 
 const Link = ({ to, children }) => {
-  const { navigate } = useContext(NavigationContext);
+  const { navigate } = useNavigationHook();
 
   const handleClick = (e) => {
+    if (e.metaKey || e.ctrlKey) {
+      return;
+    }
     e.preventDefault();
     navigate(to);
   };
