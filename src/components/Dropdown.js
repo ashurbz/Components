@@ -1,22 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 const Dropdown = ({ options, selected, onSelect }) => {
   const [isShown, setIsShown] = useState(false);
-
-  const divEl = useRef();
-
-  useEffect(() => {
-    const handler = (event) => {
-      if (divEl.current.contains(event.target)) {
-        setIsShown(false);
-      }
-    };
-    const event = document.addEventListener("click", handler, true);
-
-    return () => {
-      document.removeEventListener("click", event);
-    };
-  }, []);
 
   const handleClick = () => {
     setIsShown(!isShown);
@@ -29,7 +14,7 @@ const Dropdown = ({ options, selected, onSelect }) => {
 
   return (
     <>
-      <div ref={divEl} className="w-48">
+      <div className="w-48">
         <h3
           className="p-2 m-4 bg-gray-400 w-20 cursor-pointer"
           onClick={handleClick}
