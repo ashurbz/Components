@@ -19,6 +19,10 @@ const SideBar = () => {
       label: "Modal",
       path: "/modal",
     },
+    {
+      label: "Table",
+      path: "/table",
+    },
   ];
   return (
     <div>

@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Modal = ({ isShow }) => {
   return (
-    <div>
+    <div className="absolute shadow-2xl p-4 m-5">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
