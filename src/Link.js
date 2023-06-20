@@ -14,7 +14,7 @@ const Link = ({ to, children, className, activeClassName }) => {
   };
 
   const classes = classNames(
-    "text-red-600 flex flex-col justify-between m-4 p-2",
+    "text-red-600 flex flex-col justify-between m-4 p-2 cursor-pointer",
     className,
     currentPath === to && activeClassName
   );
